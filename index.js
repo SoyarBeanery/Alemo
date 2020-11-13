@@ -238,3 +238,1770 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className="hero text--center">
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+          <div>
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg margin-right--sm',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={useBaseUrl('/docs')}
+            >
+              Read docs
+            </Link>
+
+            <Link
+              className={clsx(
+                'button button--secondary button--outline button--lg',
+                styles.heroButton
+              )}
+              style={{color: 'white'}}
+              to={
+                'https://expo.io/@flyingcircle/react-native-elements-app'
+              }
+            >
+              Try the demo app
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {features && features.length && (
+        <section className="margin-vert--xl">
+          <div className="container">
+            <div className="row">
+              {features.map(({ title, description }, i) => (
+                <div key={i} className="col col--3">
+                  <h3>{title}</h3>
+                  <p className="margin--none">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+      <OpenCollective />
+    </Layout>
+  );
+}
+
+const Section = ({children, title}) => {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+});
+
+export default App;
